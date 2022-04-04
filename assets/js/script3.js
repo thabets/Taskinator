@@ -16,6 +16,12 @@ var taskFormHandler = function () {
   var taskTypeInput = taskType.value;
   var taskNameInput = taskName.value;
 
+  //Checking if the there is info for the input value. If empty it stops if not it continues with the function
+
+  if (!taskNameInput || !taskTypeInput) {
+    alert("You need to fill out both Task Type and Task Name of the form!");
+    return false;
+  }
   //Passing up data as an object
 
   var taskDataOj = {
