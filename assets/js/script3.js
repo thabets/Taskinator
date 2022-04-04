@@ -22,6 +22,7 @@ var taskFormHandler = function () {
     alert("You need to fill out both Task Type and Task Name of the form!");
     return false;
   }
+  formEl.reset();
   //Passing up data as an object
 
   var taskDataOj = {
